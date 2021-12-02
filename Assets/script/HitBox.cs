@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HitBox : MonoBehaviour
 {
-    public int damage;
+    public int Damage;
     public float STime, ETime;
     private Animator myAnim;
     private PolygonCollider2D hitbox;
@@ -39,5 +39,13 @@ public class HitBox : MonoBehaviour
         yield return new WaitForSeconds(STime);
         hitbox.enabled = true;
         StartCoroutine(disablehitbox());
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(" ");
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.GetComponent<Enemy>().TakeDamage(Damage);
+        }
     }
 }

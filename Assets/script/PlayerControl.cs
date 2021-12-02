@@ -26,11 +26,11 @@ public class PlayerControl : MonoBehaviour
         checkGround();
         switchAnimation();
     }
-    private void checkGround()
+    void checkGround()
     {
         isGround = myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
     }
-    private void flip()
+    void flip()
     {
         bool playerHasXSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
         if (playerHasXSpeed)
@@ -45,7 +45,7 @@ public class PlayerControl : MonoBehaviour
             }
         }
     }
-    private void run()
+    void run()
     {
         float moveDir = Input.GetAxis("Horizontal");
         Vector2 playerVel = new Vector2(moveDir * Runspeed, myRigidbody.velocity.y);
@@ -53,7 +53,7 @@ public class PlayerControl : MonoBehaviour
         bool playerHasXSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
         myAnim.SetBool("run", playerHasXSpeed);
     }
-    private void jump()
+    void jump()
     {
         if (Input.GetButtonDown("Jump") && isGround == true)
         {
@@ -63,23 +63,16 @@ public class PlayerControl : MonoBehaviour
             myRigidbody.velocity = Vector2.up * jumpVel;
         }
     }
-    private void switchAnimation()
+    void switchAnimation()
     {
         if (myAnim.GetBool("jump"))
         {
             if (myFeet.IsTouchingLayers(LayerMask.GetMask("Ground")) && myRigidbody.velocity.y < 0.1f)
             {
                 myAnim.SetBool("jump", false);
-                myAnim.SetBool("idle", true);
+                myAnim.SetBool("down", true);
             }
         }
     }
-    // private void attack()
-    // {
-    //     if (Input.GetButtonDown("attack") && myAnim.GetCurrentAnimatorStateInfo(0).IsName("sword") == false)
-    //     {
-    //         myAnim.SetTrigger("attack");
-    //     }
-    // }
 }
 

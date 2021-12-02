@@ -36,6 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\script\Enemy.cs" />
+     <Compile Include="Assets\script\EnemySlime.cs" />
+     <Compile Include="Assets\script\GameCotrol.cs" />
      <Compile Include="Assets\script\HitBox.cs" />
      <Compile Include="Assets\script\PlayerControl.cs" />
     <Reference Include="UnityEngine">
