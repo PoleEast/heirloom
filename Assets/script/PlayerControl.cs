@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class PlayerControl : BaseNumber
 {
     public float Runspeed;
     public float Jumpspeed;
