@@ -4,24 +4,44 @@ using UnityEngine;
 
 abstract public class Enemy : BaseNumber
 {
-    private SpriteRenderer spriteRenderer;
-    private Color originalColor;
-    abstract public void attack(int Damage);
+    protected SpriteRenderer spriteRenderer;
+    protected Color originalColor;
+    protected Animator myAnim;
+    protected Rigidbody2D myRigidbody;
+    abstract protected void attack();
+    abstract protected void move(Collider2D Player);
+
+
+    Collider2D IsPlayerview()
+    {
+        return Physics2D.OverlapCircle((Vector2)transform.position, 5, LayerMask.GetMask("Player"));
+    }
     //abstract public void die();
-    //abstract public void move();
-    public void Start()
+
+    protected virtual void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
-        Debug.Log(spriteRenderer.color);
+        myAnim = GetComponent<Animator>();
+        myRigidbody = GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
-    public void Update()
+    protected virtual void Update()
     {
+        move(IsPlayerview());
         if (HP <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+    protected void Flip(bool direction)   //true=R false=L
+    {
+        if (direction == true)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+        else if (direction == false)
+        {
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
     }
 }

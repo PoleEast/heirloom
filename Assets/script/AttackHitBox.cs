@@ -1,31 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class AttackHitBox : MonoBehaviour
 {
     public float STime, ETime;
     private Animator myAnim;
     private PolygonCollider2D hitbox;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        myAnim = GameObject.FindGameObjectWithTag(gameObject.transform.parent.tag).GetComponent<Animator>();
+        myAnim = gameObject.transform.parent.gameObject.GetComponent<Animator>();
         hitbox = GetComponent<PolygonCollider2D>();
     }
 
     // Update is called once per frame
-    void Update()
+
+    public void attack()
     {
-        attack();
-    }
-    void attack()
-    {
-        if (Input.GetButtonDown("attack") && myAnim.GetCurrentAnimatorStateInfo(0).IsName("sword") == false)
-        {
-            myAnim.SetTrigger("attack");
-            StartCoroutine(enablehitbox());
-        }
+        StartCoroutine(enablehitbox());
     }
 
     IEnumerator disablehitbox()
@@ -44,8 +36,8 @@ public class AttackHitBox : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             SpriteRenderer spriteRenderer = collision.gameObject.GetComponent<SpriteRenderer>();
-            Debug.Log(GameObject.FindGameObjectWithTag("Enemy").GetComponent<SpriteRenderer>().color);
             GameObject.Find("GameControl").GetComponent<GameControl>().TakeDamage(collision.gameObject.GetComponent<Enemy>(), spriteRenderer);
         }
     }
 }
+

@@ -1,0 +1,2132 @@
+fileFormatVersion: 2
+guid: cf2796161d73c504b95bceb470b9f747
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 421160473428934785
+    second: Runidle (1)_0
+  - first:
+      213: 4598138417851972150
+    second: Runidle (1)_1
+  - first:
+      213: 3979958989395465461
+    second: Runidle (1)_2
+  - first:
+      213: -6498812247880388084
+    second: Runidle (1)_3
+  - first:
+      213: -1036822234698500301
+    second: Runidle (1)_4
+  - first:
+      213: 8034412146381600547
+    second: Runidle (1)_5
+  - first:
+      213: 2918766773678910940
+    second: Runidle (1)_6
+  - first:
+      213: 5745049269087598902
+    second: Runidle (1)_7
+  - first:
+      213: -4420240796867212065
+    second: Runidle (1)_8
+  - first:
+      213: -9175343134499818970
+    second: Runidle (1)_9
+  - first:
+      213: -8674376445344236577
+    second: Runidle (1)_10
+  - first:
+      213: -1300142462397439638
+    second: Runidle (1)_11
+  - first:
+      213: 195398161060326095
+    second: Runidle (1)_12
+  - first:
+      213: -5957051255883412249
+    second: Runidle (1)_13
+  - first:
+      213: 6566022055417391567
+    second: Runidle (1)_14
+  - first:
+      213: 9193068337229257570
+    second: Runidle (1)_15
+  - first:
+      213: -5863329302646426258
+    second: Runidle (1)_16
+  - first:
+      213: -9099655489007769374
+    second: Runidle (1)_17
+  - first:
+      213: -1811719311016481084
+    second: Runidle (1)_18
+  - first:
+      213: 5044683283765772750
+    second: Runidle (1)_19
+  - first:
+      213: 8740482120149063322
+    second: Runidle (1)_20
+  - first:
+      213: 4269000771186474034
+    second: Runidle (1)_21
+  - first:
+      213: 3516489912901387143
+    second: Runidle (1)_22
+  - first:
+      213: -3128071707264544539
+    second: Runidle (1)_23
+  - first:
+      213: 3443740985978089396
+    second: Runidle (1)_24
+  - first:
+      213: -8319189292122359411
+    second: Runidle (1)_25
+  - first:
+      213: -129097575883928792
+    second: Runidle (1)_26
+  - first:
+      213: 3761779657726206919
+    second: Runidle (1)_27
+  - first:
+      213: -5385259464571647834
+    second: Runidle (1)_28
+  - first:
+      213: 4457393309570812077
+    second: Runidle (1)_29
+  - first:
+      213: -6494415231989286050
+    second: Runidle (1)_30
+  - first:
+      213: 1803632395303747715
+    second: Runidle (1)_31
+  - first:
+      213: -384661614683192049
+    second: Runidle (1)_32
+  - first:
+      213: 6554295022207740048
+    second: Runidle (1)_33
+  - first:
+      213: -8824885683117908394
+    second: Runidle (1)_34
+  - first:
+      213: 1874469468344454811
+    second: Runidle (1)_35
+  - first:
+      213: -5277241590557768381
+    second: Runidle (1)_36
+  - first:
+      213: 2295803486596523161
+    second: Runidle (1)_37
+  - first:
+      213: 7458662223876867610
+    second: Runidle (1)_38
+  - first:
+      213: 2221287754187204996
+    second: Runidle (1)_39
+  - first:
+      213: -6147155412743079751
+    second: Runidle (1)_40
+  - first:
+      213: -2867693115594845464
+    second: Runidle (1)_41
+  - first:
+      213: 3132217978178060049
+    second: Runidle (1)_42
+  - first:
+      213: 6833909500969226202
+    second: Runidle (1)_43
+  - first:
+      213: 3483007538833105774
+    second: Runidle (1)_44
+  - first:
+      213: 2352187461944455217
+    second: Runidle (1)_45
+  - first:
+      213: 343122157424765310
+    second: Runidle (1)_46
+  - first:
+      213: -8292674553857215748
+    second: Runidle (1)_47
+  - first:
+      213: 341781510990301225
+    second: Runidle (1)_48
+  - first:
+      213: 4123059708258146262
+    second: Runidle (1)_49
+  - first:
+      213: -5483875353528844897
+    second: Runidle (1)_50
+  - first:
+      213: 3973127592495448173
+    second: Runidle (1)_51
+  - first:
+      213: 1515868057677461119
+    second: Runidle (1)_52
+  - first:
+      213: -9068512819202929708
+    second: Runidle (1)_53
+  - first:
+      213: 4949844806297236598
+    second: Runidle (1)_54
+  - first:
+      213: -7016068515400055077
+    second: Runidle (1)_55
+  - first:
+      213: 3615012467530980960
+    second: Runidle (1)_56
+  - first:
+      213: -5476997898482552578
+    second: Runidle (1)_57
+  - first:
+      213: -6275150272950027228
+    second: Runidle (1)_58
+  - first:
+      213: 4160725111574167176
+    second: Runidle (1)_59
+  - first:
+      213: -3571861418721184526
+    second: Runidle (1)_60
+  - first:
+      213: 4223130433075534186
+    second: Runidle (1)_61
+  - first:
+      213: -4905033384531424487
+    second: Runidle (1)_62
+  - first:
+      213: 1260655037811923057
+    second: Runidle (1)_63
+  - first:
+      213: 3163623042208634359
+    second: Runidle (1)_64
+  - first:
+      213: 524913994485381570
+    second: Runidle (1)_65
+  - first:
+      213: 8058417822940185778
+    second: Runidle (1)_66
+  - first:
+      213: 8598244161189233092
+    second: Runidle (1)_67
+  - first:
+      213: -5562084391109820253
+    second: Runidle (1)_68
+  - first:
+      213: -2316261122151235613
+    second: Runidle (1)_69
+  - first:
+      213: 760578657630132470
+    second: Runidle (1)_70
+  - first:
+      213: 3518272878032684391
+    second: Runidle (1)_71
+  - first:
+      213: -2382534898721127269
+    second: Runidle (1)_72
+  - first:
+      213: 2246273665077177852
+    second: Runidle (1)_73
+  - first:
+      213: 2875281594780959704
+    second: Runidle (1)_74
+  - first:
+      213: 4808808961829117793
+    second: Runidle (1)_75
+  - first:
+      213: -5112034243792206076
+    second: Runidle_0
+  - first:
+      213: -2331105359937739534
+    second: Runidle_1
+  - first:
+      213: 7287054539132344279
+    second: Runidle_2
+  - first:
+      213: 4582994468284557606
+    second: Runidle_3
+  - first:
+      213: 4718054918749455008
+    second: Runidle_4
+  - first:
+      213: -1028496149113774100
+    second: Runidle_5
+  - first:
+      213: -1213734739467598143
+    second: Runidle_6
+  - first:
+      213: -1896785076575696254
+    second: Runidle_7
+  - first:
+      213: 4014322593186529872
+    second: Runidle_8
+  - first:
+      213: -5940419760064708224
+    second: Runidle_9
+  - first:
+      213: -2238664277999094631
+    second: Runidle_10
+  - first:
+      213: -538492799636261326
+    second: Runidle_11
+  - first:
+      213: -4027843566407210444
+    second: Runidle_12
+  - first:
+      213: 9222103333015825678
+    second: Runidle_13
+  - first:
+      213: -1291081909653304438
+    second: Runidle_14
+  - first:
+      213: 2625945494718665591
+    second: Runidle_15
+  - first:
+      213: -2053828261944881816
+    second: Runidle_16
+  - first:
+      213: 8193710610183433027
+    second: Runidle_17
+  - first:
+      213: 7133563269382079115
+    second: Runidle_18
+  - first:
+      213: -2474793914560473192
+    second: Runidle_19
+  - first:
+      213: 8964610352458496962
+    second: Runidle_20
+  - first:
+      213: -7783150604791462384
+    second: Runidle_21
+  - first:
+      213: 5212356912065618431
+    second: Runidle_22
+  - first:
+      213: 3439787867048288845
+    second: Runidle_23
+  - first:
+      213: -796287102478583042
+    second: Runidle_24
+  - first:
+      213: -6235002197884206106
+    second: Runidle_25
+  - first:
+      213: 2646641045738713094
+    second: Runidle_26
+  - first:
+      213: -556543619335272632
+    second: Runidle_27
+  - first:
+      213: -2749755871461990114
+    second: Runidle_28
+  - first:
+      213: 5812363668424503381
+    second: Runidle_29
+  - first:
+      213: 2030948294232195497
+    second: Runidle_30
+  - first:
+      213: -1916326875252048877
+    second: Runidle_31
+  - first:
+      213: -4107234978919588117
+    second: Runidle_32
+  - first:
+      213: 614621095463141222
+    second: Runidle_33
+  - first:
+      213: 2638169655119677242
+    second: Runidle_34
+  - first:
+      213: -7791553100513960024
+    second: Runidle_35
+  - first:
+      213: 6906344882045644186
+    second: Runidle_36
+  - first:
+      213: 8141719807013612045
+    second: Runidle_37
+  - first:
+      213: -882983284474057453
+    second: Runidle_38
+  - first:
+      213: 7402113253267264101
+    second: Runidle_39
+  - first:
+      213: 3768814076384411609
+    second: Runidle_40
+  - first:
+      213: -5582530037019283424
+    second: Runidle_41
+  - first:
+      213: 301858110142838038
+    second: Runidle_42
+  - first:
+      213: 4792158909262104121
+    second: Runidle_43
+  - first:
+      213: 3432737838825594601
+    second: Runidle_44
+  - first:
+      213: -2870612303966887058
+    second: Runidle_45
+  - first:
+      213: 3368946109074102130
+    second: Runidle_46
+  - first:
+      213: -2890797997494924802
+    second: Runidle_47
+  - first:
+      213: -1207285647102518295
+    second: Runidle_48
+  - first:
+      213: 5470039053215965523
+    second: Runidle_49
+  - first:
+      213: 5352218894817901845
+    second: Runidle_50
+  - first:
+      213: 3924669344341698276
+    second: Runidle_51
+  - first:
+      213: -1749986711551803036
+    second: Runidle_52
+  - first:
+      213: 3102354069325693253
+    second: Runidle_53
+  - first:
+      213: -8097359370613508876
+    second: Runidle_54
+  - first:
+      213: -1838040873600191535
+    second: Runidle_55
+  - first:
+      213: -3605512898877920540
+    second: Runidle_56
+  - first:
+      213: 6093096032480330608
+    second: Runidle_57
+  - first:
+      213: 7215766136751146515
+    second: Runidle_58
+  - first:
+      213: 8419932581013303203
+    second: Runidle_59
+  - first:
+      213: -5577254992426958336
+    second: Runidle_60
+  - first:
+      213: 2853900440541630581
+    second: Runidle_61
+  - first:
+      213: -3872091578218251454
+    second: Runidle_62
+  - first:
+      213: 2674451042795721262
+    second: Runidle_63
+  - first:
+      213: -4471177700325250748
+    second: Runidle_64
+  - first:
+      213: -866218364750164789
+    second: Runidle_65
+  - first:
+      213: 8442694439580741323
+    second: Runidle_66
+  - first:
+      213: -8954849125924470135
+    second: Runidle_67
+  - first:
+      213: -8604725141117113741
+    second: Runidle_68
+  - first:
+      213: -3948839780420299961
+    second: Runidle_69
+  - first:
+      213: -8862940044765177751
+    second: Runidle_70
+  - first:
+      213: 1376395810231436253
+    second: Runidle_71
+  - first:
+      213: 1678128105579050567
+    second: Runidle_72
+  - first:
+      213: 8759840601656464170
+    second: Runidle_73
+  - first:
+      213: -6796071990425812917
+    second: Runidle_74
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Runidle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5868
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4070223a0f76e09b0800000000000000
+      internalID: -5112034243792206076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_1
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 5868
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4e6ee960046afd0800000000000000
+      internalID: -2331105359937739534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_2
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 5868
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d791efae71d02560800000000000000
+      internalID: 7287054539132344279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_3
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 5868
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6296ea9ef211a9f30800000000000000
+      internalID: 4582994468284557606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5542
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a288d683f5e97140800000000000000
+      internalID: 4718054918749455008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_5
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 5542
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef573b933c0ab1f0800000000000000
+      internalID: -1028496149113774100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_6
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 5542
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c68b726fa2f72fe0800000000000000
+      internalID: -1213734739467598143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_7
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 5542
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a817fb5044da5e0800000000000000
+      internalID: -1896785076575696254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5216
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05245b4312db5b730800000000000000
+      internalID: 4014322593186529872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_9
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 5216
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081c1a0b3b36f8da0800000000000000
+      internalID: -5940419760064708224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_10
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 5216
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994f18a33baaee0e0800000000000000
+      internalID: -2238664277999094631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_11
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 5216
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236339bd6a3e688f0800000000000000
+      internalID: -538492799636261326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4890
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43aa475ed993a18c0800000000000000
+      internalID: -4027843566407210444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_13
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 4890
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0daa5ede1e7bff70800000000000000
+      internalID: 9222103333015825678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_14
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 4890
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b8e27f7d7251ee0800000000000000
+      internalID: -1291081909653304438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_15
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 4890
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7735e3cb38b317420800000000000000
+      internalID: 2625945494718665591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4564
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d0e11d3165f73e0800000000000000
+      internalID: -2053828261944881816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_17
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 4564
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b25584368e5b170800000000000000
+      internalID: 8193710610183433027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_18
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 4564
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b820b4e8ff18ff260800000000000000
+      internalID: 7133563269382079115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_19
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 4564
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8971356fb04c7add0800000000000000
+      internalID: -2474793914560473192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4238
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbf3187e91b86c70800000000000000
+      internalID: 8964610352458496962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_21
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 4238
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016c90803c1bcf390800000000000000
+      internalID: -7783150604791462384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_22
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 4238
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1293acef2065840800000000000000
+      internalID: 5212356912065618431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_23
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 4238
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42ac1e17d49cbf20800000000000000
+      internalID: 3439787867048288845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3912
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efaf985691503f4f0800000000000000
+      internalID: -796287102478583042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_25
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 3912
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e305551982d879a0800000000000000
+      internalID: -6235002197884206106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_26
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3912
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60079333202cab420800000000000000
+      internalID: 2646641045738713094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_27
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 3912
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847c283e682c648f0800000000000000
+      internalID: -556543619335272632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3586
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11a67e8a97e6d9d0800000000000000
+      internalID: -2749755871461990114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_29
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 3586
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55034d116f9a9a050800000000000000
+      internalID: 5812363668424503381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_30
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3586
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a145e296b06f2c10800000000000000
+      internalID: 2030948294232195497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_31
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 3586
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c311f2cd6d765e0800000000000000
+      internalID: -1916326875252048877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3260
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee50783c8b2007c0800000000000000
+      internalID: -4107234978919588117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_33
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 3260
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fba8241a2978800800000000000000
+      internalID: 614621095463141222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_34
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3260
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a378f9ed259ac9420800000000000000
+      internalID: 2638169655119677242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_35
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 3260
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af954b8cb7ded390800000000000000
+      internalID: -7791553100513960024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2934
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9deaae241448df50800000000000000
+      internalID: 6906344882045644186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_37
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 2934
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aeecd17033df070800000000000000
+      internalID: 8141719807013612045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_38
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2934
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31de05a81630fb3f0800000000000000
+      internalID: -882983284474057453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_39
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2934
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562d43829c699b660800000000000000
+      internalID: 7402113253267264101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2608
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df72673f648d4430800000000000000
+      internalID: 3768814076384411609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_41
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 2608
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0207483428ed682b0800000000000000
+      internalID: -5582530037019283424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_42
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2608
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61572a31a5a603400800000000000000
+      internalID: 301858110142838038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_43
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2608
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9368ac5532b218240800000000000000
+      internalID: 4792158909262104121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2282
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eedd3280e883af20800000000000000
+      internalID: 3432737838825594601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_45
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 2282
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63203691598928d0800000000000000
+      internalID: -2870612303966887058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_46
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2282
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277dbc203a6e0ce20800000000000000
+      internalID: 3368946109074102130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_47
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2282
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef987e19982d1e7d0800000000000000
+      internalID: -2890797997494924802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1956
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebd606b91cde3fe0800000000000000
+      internalID: -1207285647102518295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_49
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1956
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351a372998b79eb40800000000000000
+      internalID: 5470039053215965523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_50
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1956
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d31c14ab6e64a40800000000000000
+      internalID: 5352218894817901845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_51
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1956
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e62a5299f9377630800000000000000
+      internalID: 3924669344341698276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1630
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4610d409b5cc6b7e0800000000000000
+      internalID: -1749986711551803036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_53
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1630
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54145adc696cd0b20800000000000000
+      internalID: 3102354069325693253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_54
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1630
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4b6e7dd8660af80800000000000000
+      internalID: -8097359370613508876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_55
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1630
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d379665097fd76e0800000000000000
+      internalID: -1838040873600191535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1304
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eaea4d0f15a6fdc0800000000000000
+      internalID: -3605512898877920540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_57
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1304
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07305561f860f8450800000000000000
+      internalID: 6093096032480330608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_58
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1304
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3164853121d832460800000000000000
+      internalID: 7215766136751146515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_59
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1304
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af290c521c99d470800000000000000
+      internalID: 8419932581013303203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 978
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0020e9a422c9992b0800000000000000
+      internalID: -5577254992426958336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_61
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 978
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57090de74571b9720800000000000000
+      internalID: 2853900440541630581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_62
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 978
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bf48e8931934ac0800000000000000
+      internalID: -3872091578218251454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_63
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 978
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e221307bd0f8d1520800000000000000
+      internalID: 2674451042795721262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 652
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4492774229f23f1c0800000000000000
+      internalID: -4471177700325250748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_65
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 652
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc85279cf29af3f0800000000000000
+      internalID: -866218364750164789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_66
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 652
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce206a8cd97a2570800000000000000
+      internalID: 8442694439580741323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_67
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 652
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9820e003a2cf9b380800000000000000
+      internalID: -8954849125924470135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a67dde210e59880800000000000000
+      internalID: -8604725141117113741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_69
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 326
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743dd1d3427e239c0800000000000000
+      internalID: -3948839780420299961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_70
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 326
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968df26bcf2800580800000000000000
+      internalID: -8862940044765177751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_71
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 326
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd34e2b62b0f91310800000000000000
+      internalID: 1376395810231436253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74673a4fe98e94710800000000000000
+      internalID: 1678128105579050567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_73
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2317c69d94319970800000000000000
+      internalID: 8759840601656464170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runidle_74
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 550
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4000b628808fa1a0800000000000000
+      internalID: -6796071990425812917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
