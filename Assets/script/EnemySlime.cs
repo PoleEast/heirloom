@@ -48,7 +48,6 @@ public class EnemySlime : Enemy
                 Flip(movedirection);
                 if (gameObject.transform.position.x - GroundLocation.max.x <= -2.5 && gameObject.transform.position.x - GroundLocation.min.x >= 2.5)
                 {
-                    Debug.Log("1");
                     if (movedirection == true) EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
                     else EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
                 }
@@ -57,14 +56,12 @@ public class EnemySlime : Enemy
                     movedirection = true;
                     Flip(movedirection);
                     EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
-                    Debug.Log("2");
                 }
                 else if (gameObject.transform.position.x - GroundLocation.max.x > -2.5)
                 {
                     movedirection = false;
                     Flip(movedirection);
                     EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
-                    Debug.Log("3");
                 }
                 else Debug.Log("move QQ");
             }

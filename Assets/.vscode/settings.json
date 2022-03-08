@@ -1,0 +1,7 @@
+{
+    "notebook.diff.ignoreMetadata": true,
+    "files.exclude": {
+        "**/.cs.meta": true,
+        "**/.meta": true
+    }
+}

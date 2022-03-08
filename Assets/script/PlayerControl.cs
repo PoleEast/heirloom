@@ -72,18 +72,25 @@ public class PlayerControl : BaseNumber
     }
     void run()
     {
-        if (!(myAnim.GetCurrentAnimatorStateInfo(0).IsName("sword")) && !(myAnim.GetCurrentAnimatorStateInfo(0).IsName("roll")))
+        if (Input.GetAxis("Horizontal") != 0)
         {
-            float moveDir = Input.GetAxis("Horizontal");
-            moveforWard(moveDir);
-            bool playerHasXSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
-            //if (myAnim.GetBool("jump") == false)
-            myAnim.SetBool("run", playerHasXSpeed);
+            if (myAnim.GetCurrentAnimatorStateInfo(0).IsName("sword") == false &&
+                (myAnim.GetCurrentAnimatorStateInfo(0).IsName("roll") == false) &&
+                myAnim.GetBool("roll") == false)
+            {
+                Debug.Log("1");
+                float moveDir = Input.GetAxis("Horizontal");
+                moveforWard(moveDir * Runspeed, myRigidbody.velocity.y);
+                bool playerHasXSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+                myAnim.SetBool("run", playerHasXSpeed);
+            }
         }
+        else
+            myAnim.SetBool("run", false);
     }
-    void moveforWard(float moveDir)
+    void moveforWard(float Xspeed, float Yspeed)
     {
-        Vector2 playerVel = new Vector2(moveDir * Runspeed, myRigidbody.velocity.y);
+        Vector2 playerVel = new Vector2(Xspeed, Yspeed);
         myRigidbody.velocity = playerVel;
     }
     void jump()
@@ -101,18 +108,19 @@ public class PlayerControl : BaseNumber
     {
         if (Input.GetButtonDown("roll") && (myAnim.GetBool("run") || myAnim.GetBool("idle")) && !(myAnim.GetCurrentAnimatorStateInfo(0).IsName("roll")))
         {
+            Debug.Log("2");
             myAnim.SetBool("roll", true);
             myAnim.SetBool("idle", false);
             myAnim.SetBool("run", false);
             if (transform.localRotation.y == 0)
             {
-                myRigidbody.velocity = new Vector2(Rollspeed, 0.0f);
-                Debug.Log("");
+                moveforWard(Rollspeed, myRigidbody.velocity.y);
+                Debug.Log(myRigidbody.velocity);
             }
             else
             {
-                myRigidbody.velocity = new Vector2(Rollspeed * -1, 0.0f);
-                Debug.Log("");
+                moveforWard(Rollspeed * -1, myRigidbody.velocity.y);
+                Debug.Log(myRigidbody.velocity);
             }
         }
     }
