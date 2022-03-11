@@ -108,20 +108,14 @@ public class PlayerControl : BaseNumber
     {
         if (Input.GetButtonDown("roll") && (myAnim.GetBool("run") || myAnim.GetBool("idle")) && !(myAnim.GetCurrentAnimatorStateInfo(0).IsName("roll")))
         {
-            Debug.Log("2");
             myAnim.SetBool("roll", true);
             myAnim.SetBool("idle", false);
             myAnim.SetBool("run", false);
             if (transform.localRotation.y == 0)
-            {
                 moveforWard(Rollspeed, myRigidbody.velocity.y);
-                Debug.Log(myRigidbody.velocity);
-            }
             else
-            {
                 moveforWard(Rollspeed * -1, myRigidbody.velocity.y);
-                Debug.Log(myRigidbody.velocity);
-            }
+            StartCoroutine(IrollEnd());
         }
     }
     void fall()
@@ -165,8 +159,9 @@ public class PlayerControl : BaseNumber
         myAnim.SetBool("idle", true);
         myAnim.SetBool("attack", false);
     }
-    void rollEnd()
+    IEnumerator IrollEnd()
     {
+        yield return new WaitForSeconds(0.6f);
         myAnim.SetBool("idle", true);
         myAnim.SetBool("roll", false);
     }
