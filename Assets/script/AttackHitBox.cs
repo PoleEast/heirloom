@@ -4,12 +4,10 @@ using UnityEngine;
 public class AttackHitBox : MonoBehaviour
 {
     public float STime, ETime;
-    private Animator myAnim;
     private PolygonCollider2D hitbox;
     // Start is called before the first frame update
     public void Start()
     {
-        myAnim = gameObject.transform.parent.gameObject.GetComponent<Animator>();
         hitbox = GetComponent<PolygonCollider2D>();
     }
 

@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-abstract public class Enemy : BaseNumber
+abstract public class Enemy : MonoBehaviour
 {
+    public float flashTime;
+    public int HP;
+    public int Damage;
     protected SpriteRenderer spriteRenderer;
     protected Color originalColor;
     protected Animator myAnim;

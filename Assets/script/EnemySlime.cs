@@ -23,7 +23,7 @@ public class EnemySlime : Enemy
     }
     protected override void attack()
     {
-
+        
     }
     protected override void move(Collider2D Player)
     {

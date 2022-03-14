@@ -56,13 +56,15 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\script\AttackHitBox.cs" />
-     <Compile Include="Assets\script\BaseNumber.cs" />
      <Compile Include="Assets\script\Camerafllow.cs" />
      <Compile Include="Assets\script\CharacterState.cs" />
      <Compile Include="Assets\script\Enemy.cs" />
+     <Compile Include="Assets\script\EnemyAttackBox.cs" />
      <Compile Include="Assets\script\EnemySlime.cs" />
      <Compile Include="Assets\script\GameControl.cs" />
-     <Compile Include="Assets\script\PlayerControl.cs" />
+     <Compile Include="Assets\script\PlayAttack.cs" />
+     <Compile Include="Assets\script\PlayerMove.cs" />
+     <Compile Include="Assets\script\PlayerStats.cs" />
      <Compile Include="Assets\script\StateData.cs" />
      <Compile Include="Assets\script\test.cs" />
  <Reference Include="UnityEngine">
