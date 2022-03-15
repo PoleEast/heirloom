@@ -2873,9 +2873,9 @@ GameObject:
   - component: {fileID: 2018396517}
   - component: {fileID: 2018396519}
   - component: {fileID: 2018396518}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: hitbox
-  m_TagString: Untagged
+  m_TagString: Hitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

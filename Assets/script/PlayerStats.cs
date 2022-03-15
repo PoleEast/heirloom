@@ -11,7 +11,6 @@ public class PlayerStats : MonoBehaviour
     protected Animator myAnim;
     protected BoxCollider2D myFeet;
     protected CapsuleCollider2D mybody;
-    protected bool live;
     protected bool oriented; //true=R false=f
     void Start()
     {
@@ -56,14 +55,16 @@ public class PlayerStats : MonoBehaviour
     }
     void die()
     {
-        if (HP == 0)
+        if (HP <= 0 && !(myAnim.GetBool("die")))
         {
-            myAnim.SetTrigger("die");
-            if (oriented)
-                moveforWard(-4f, 4f);
-            else if (oriented)
-                moveforWard(4f, 4f);
-            live = false;
+            myAnim.SetBool("die", true);
+            GetComponent<PlayerMove>().enabled = false;
+            GetComponent<PlayAttack>().enabled = false;
+            //if (oriented)
+            //     moveforWard(4f, 4f);
+            // else if (!oriented)
+            //    moveforWard(-4f, 4f);
+
         }
     }
 

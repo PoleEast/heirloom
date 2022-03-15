@@ -32,7 +32,6 @@ public class PlayerMove : MonoBehaviour
                 (myAnim.GetCurrentAnimatorStateInfo(0).IsName("roll") == false) &&
                 myAnim.GetBool("roll") == false)
             {
-                Debug.Log("1");
                 float moveDir = Input.GetAxis("Horizontal");
                 moveforWard(moveDir * Runspeed, myRigidbody.velocity.y);
                 bool playerHasXSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
@@ -77,7 +76,10 @@ public class PlayerMove : MonoBehaviour
     {
 
     }
+    void hit()
+    {
 
+    }
     IEnumerator IrollEnd()
     {
         yield return new WaitForSeconds(0.6f);

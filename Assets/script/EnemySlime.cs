@@ -14,6 +14,7 @@ public class EnemySlime : Enemy
         base.Start();
         GameControl = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControl>();
         myFeet = GetComponent<BoxCollider2D>();
+        myRigidbody = GetComponent<Rigidbody2D>();
         if (Random.Range(0, 2) == 0) movedirection = true;
         else movedirection = false;
     }
@@ -23,7 +24,7 @@ public class EnemySlime : Enemy
     }
     protected override void attack()
     {
-        
+
     }
     protected override void move(Collider2D Player)
     {
@@ -68,7 +69,6 @@ public class EnemySlime : Enemy
             myRigidbody.velocity = EnemyVel;
             bool EnemyMove = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
             myAnim.SetBool("move", EnemyMove);
-            StartCoroutine(CoroutineTest());
         }
 
     }
@@ -83,9 +83,14 @@ public class EnemySlime : Enemy
             GroundLocation = other.collider.bounds;
         }
     }
-    IEnumerator CoroutineTest()
+
+    IEnumerator ItakeDamageshark()
     {
-        yield return new WaitForSeconds(10000f);
-        myAnim.SetBool("move",false);
+        for (int time = 0; time < 60; time++)
+        {
+            myRigidbody.velocity = new Vector2(-0.5f, 0.5f);
+            Debug.Log(time);
+            yield return null;
+        }
     }
 }
