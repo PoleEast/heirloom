@@ -58,13 +58,7 @@ public class PlayerStats : MonoBehaviour
         if (HP <= 0 && !(myAnim.GetBool("die")))
         {
             myAnim.SetBool("die", true);
-            GetComponent<PlayerMove>().enabled = false;
-            GetComponent<PlayAttack>().enabled = false;
-            //if (oriented)
-            //     moveforWard(4f, 4f);
-            // else if (!oriented)
-            //    moveforWard(-4f, 4f);
-
+            UnableToControl(false);
         }
     }
 
@@ -92,6 +86,28 @@ public class PlayerStats : MonoBehaviour
     {
         Vector2 playerVel = new Vector2(Xspeed, Yspeed);
         myRigidbody.velocity = playerVel;
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            myAnim.SetBool("hit", true);
+            myRigidbody.velocity = new Vector2(0.1, 0.1);
+            AbleToControl(false);
+            IwaitforSec(0.2f);
+            AbleToControl(true);
+            myAnim.SetBool("hit", false);
+            myAnim.SetBool("idle", true);
+        }
+    }
+    void AbleToControl(bool whether)
+    {
+        GetComponent<PlayerMove>().enabled = whether;
+        GetComponent<PlayAttack>().enabled = whether;
+    }
+    IEnumerator IwaitforSec(float sec)
+    {
+        yield return new WaitForSeconds(sec);
     }
 }
 
