@@ -23,12 +23,7 @@ public class EnemyAttackBox : MonoBehaviour
         {
             int Damage = gameObject.transform.parent.gameObject.GetComponent<Enemy>().Damage;
             GameObject.Find("Player").GetComponent<PlayerStats>().TakeDamage(Damage);
-            StartCoroutine(IwaitforSec());
         }
-    }
-    IEnumerator IwaitforSec()
-    {
-        yield return new WaitForSeconds(1.0f);
     }
 }
 

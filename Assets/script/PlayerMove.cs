@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour
         myAnim = GetComponent<Animator>();
 
     }
-    void Update()
+    void LateUpdate()
     {
         run();
         jump();

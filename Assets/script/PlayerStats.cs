@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
     protected Animator myAnim;
     protected BoxCollider2D myFeet;
     protected CapsuleCollider2D mybody;
-    protected bool oriented; //true=R false=f
+    protected bool oriented;    //true=R false=f
     void Start()
     {
         myAnim = GetComponent<Animator>();
@@ -26,11 +26,11 @@ public class PlayerStats : MonoBehaviour
     {
         fall();
         fallEnd();
+        die();
     }
     void LateUpdate()
     {
         flip();
-        die();
     }
     public bool checkGround()
     {
@@ -58,7 +58,7 @@ public class PlayerStats : MonoBehaviour
         if (HP <= 0 && !(myAnim.GetBool("die")))
         {
             myAnim.SetBool("die", true);
-            UnableToControl(false);
+            AbleToControl(false);
         }
     }
 
@@ -89,15 +89,12 @@ public class PlayerStats : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "EnemyHitbox" && !(myAnim.GetBool("die")))
         {
-            myAnim.SetBool("hit", true);
-            myRigidbody.velocity = new Vector2(0.1, 0.1);
+            myAnim.SetTrigger("hit");
             AbleToControl(false);
-            IwaitforSec(0.2f);
-            AbleToControl(true);
-            myAnim.SetBool("hit", false);
-            myAnim.SetBool("idle", true);
+            myRigidbody.velocity = new Vector2(1.0f, 1.0f);
+            StartCoroutine(IwaitforSec(0.2f));
         }
     }
     void AbleToControl(bool whether)
@@ -108,6 +105,10 @@ public class PlayerStats : MonoBehaviour
     IEnumerator IwaitforSec(float sec)
     {
         yield return new WaitForSeconds(sec);
+        if (HP > 0)
+        {
+            AbleToControl(true);
+        }
     }
 }
 
