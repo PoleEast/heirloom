@@ -62,6 +62,7 @@
      <Compile Include="Assets\script\EnemyAttackBox.cs" />
      <Compile Include="Assets\script\EnemySlime.cs" />
      <Compile Include="Assets\script\GameControl.cs" />
+     <Compile Include="Assets\script\HPControl.cs" />
      <Compile Include="Assets\script\PlayAttack.cs" />
      <Compile Include="Assets\script\PlayerMove.cs" />
      <Compile Include="Assets\script\PlayerStats.cs" />

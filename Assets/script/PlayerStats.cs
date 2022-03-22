@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public int HP;
+    public int MaxHP;
     public int Damage;
     public float flashTime;
     protected Rigidbody2D myRigidbody;
@@ -12,8 +12,12 @@ public class PlayerStats : MonoBehaviour
     protected BoxCollider2D myFeet;
     protected CapsuleCollider2D mybody;
     protected bool oriented;    //true=R false=f
+    protected int currentHP;
+    private GameObject playerHpBar;
     void Start()
     {
+        playerHpBar = GameObject.Find("PlayerBar");
+        currentHP = MaxHP;
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         myFeet = GetComponent<BoxCollider2D>();
@@ -55,7 +59,7 @@ public class PlayerStats : MonoBehaviour
     }
     void die()
     {
-        if (HP <= 0 && !(myAnim.GetBool("die")))
+        if (currentHP <= 0 && !(myAnim.GetBool("die")))
         {
             myAnim.SetBool("die", true);
             AbleToControl(false);
@@ -80,7 +84,9 @@ public class PlayerStats : MonoBehaviour
     }
     public void TakeDamage(int Damage)
     {
-        HP = HP - Damage;
+        currentHP = currentHP - Damage;
+        playerHpBar.GetComponent
+
     }
     void moveforWard(float Xspeed, float Yspeed)
     {
@@ -105,7 +111,7 @@ public class PlayerStats : MonoBehaviour
     IEnumerator IwaitforSec(float sec)
     {
         yield return new WaitForSeconds(sec);
-        if (HP > 0)
+        if (currentHP > 0)
         {
             AbleToControl(true);
         }
