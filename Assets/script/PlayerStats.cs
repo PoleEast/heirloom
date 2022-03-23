@@ -7,22 +7,25 @@ public class PlayerStats : MonoBehaviour
     public int MaxHP;
     public int Damage;
     public float flashTime;
+    [HideInInspector]
+    public int currentHP;
     protected Rigidbody2D myRigidbody;
     protected Animator myAnim;
     protected BoxCollider2D myFeet;
     protected CapsuleCollider2D mybody;
     protected bool oriented;    //true=R false=f
-    protected int currentHP;
-    private GameObject playerHpBar;
+    private GameObject PlayerHPBar;
+
     void Start()
     {
-        playerHpBar = GameObject.Find("PlayerBar");
-        currentHP = MaxHP;
+
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         myFeet = GetComponent<BoxCollider2D>();
         mybody = GetComponent<CapsuleCollider2D>();
+        PlayerHPBar = GameObject.Find("PlayerBar");
         myAnim.SetBool("idle", true);
+        currentHP = MaxHP;
     }
 
     // Update is called once per frame
@@ -85,8 +88,7 @@ public class PlayerStats : MonoBehaviour
     public void TakeDamage(int Damage)
     {
         currentHP = currentHP - Damage;
-        playerHpBar.GetComponent
-
+        PlayerHPBar.GetComponent<HPControl>().UpDateHPText(currentHP);
     }
     void moveforWard(float Xspeed, float Yspeed)
     {

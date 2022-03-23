@@ -4180,6 +4180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986850161}
+  - component: {fileID: 986850162}
   m_Layer: 5
   m_Name: PlayerBar
   m_TagString: Untagged
@@ -4211,6 +4212,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &986850162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986850160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5f183de59df3549b5efe87f53b1371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HPText: {fileID: 1027444202}
+  HpBar: {fileID: 34449483}
+  HPcurrent: 0
 --- !u!1 &1027444200
 GameObject:
   m_ObjectHideFlags: 0
@@ -5479,6 +5495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5f183de59df3549b5efe87f53b1371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HPText: {fileID: 0}
+  HpBar: {fileID: 0}
+  HPcurrent: 0
 --- !u!1 &2017781914
 GameObject:
   m_ObjectHideFlags: 0
@@ -6284,6 +6303,11 @@ PrefabInstance:
       propertyPath: attackmove
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8528877783850240135, guid: 7ba604750e4bdc147b327166cf5f5c9a,
+        type: 3}
+      propertyPath: playerHpBar
+      value: 
+      objectReference: {fileID: 986850160}
     - target: {fileID: 8528877783850240142, guid: 7ba604750e4bdc147b327166cf5f5c9a,
         type: 3}
       propertyPath: m_Name
