@@ -66,6 +66,7 @@ public class PlayerStats : MonoBehaviour
         {
             myAnim.SetBool("die", true);
             AbleToControl(false);
+            Destroy(this);
         }
     }
 
@@ -87,23 +88,27 @@ public class PlayerStats : MonoBehaviour
     }
     public void TakeDamage(int Damage)
     {
-        currentHP = currentHP - Damage;
-        PlayerHPBar.GetComponent<HPControl>().UpDateHPText(currentHP);
+        if (!(myAnim.GetBool("roll")))
+        {
+            currentHP = currentHP - Damage;
+            PlayerHPBar.GetComponent<HPControl>().UpDateHPText(currentHP);
+            hit();
+        }
     }
     void moveforWard(float Xspeed, float Yspeed)
     {
         Vector2 playerVel = new Vector2(Xspeed, Yspeed);
         myRigidbody.velocity = playerVel;
     }
-    void OnTriggerEnter2D(Collider2D collision)
+    void hit()
     {
-        if (collision.gameObject.tag == "EnemyHitbox" && !(myAnim.GetBool("die")))
-        {
-            myAnim.SetTrigger("hit");
-            AbleToControl(false);
+        myAnim.SetTrigger("hit");
+        AbleToControl(false);
+        if (oriented)
             myRigidbody.velocity = new Vector2(1.0f, 1.0f);
-            StartCoroutine(IwaitforSec(0.2f));
-        }
+        else
+            myRigidbody.velocity = new Vector2(-1.0f, 1.0f);
+        StartCoroutine(IwaitforSec(0.2f));
     }
     void AbleToControl(bool whether)
     {

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HPControl : MonoBehaviour
 {
     public Text HPText;
-    public UnityEngien.UI.Image HpBar;
+    public Image HpBar;
 
     [HideInInspector]
     public int HPcurrent;
@@ -28,7 +28,7 @@ public class HPControl : MonoBehaviour
 
     void upDateHPBar(int currentHP)
     {
-        float HpPC = currentHP / MaxHP;
-        HpBar.fillamount = HpPC;
+        float HpPC = (float)currentHP / MaxHP;
+        HpBar.fillAmount = HpPC;
     }
 }

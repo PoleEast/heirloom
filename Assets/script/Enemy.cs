@@ -7,6 +7,7 @@ abstract public class Enemy : MonoBehaviour
     public float flashTime;
     public int HP;
     public int Damage;
+    public GameObject Hitbox;
     protected SpriteRenderer spriteRenderer;
     protected Color originalColor;
     protected Animator myAnim;
@@ -33,7 +34,9 @@ abstract public class Enemy : MonoBehaviour
         move(IsPlayerview());
         if (HP <= 0)
         {
-            Destroy(gameObject);
+            myAnim.SetBool("die", true);
+            Hitbox.SetActive(false);
+            Destroy(gameObject, 3);
         }
     }
     protected void Flip(bool direction)   //true=R false=L

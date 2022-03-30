@@ -28,49 +28,51 @@ public class EnemySlime : Enemy
     }
     protected override void move(Collider2D Player)
     {
-        if (checkGound())
+        if (HP > 0)
         {
-            Vector2 EnemyVel = new Vector2();
-            if (Player != null)
+            if (checkGound())
             {
-                if (Player.transform.position.x < transform.position.x)
+                Vector2 EnemyVel = new Vector2();
+                if (Player != null)
                 {
-                    Flip(false);
-                    EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
+                    if (Player.transform.position.x < transform.position.x)
+                    {
+                        Flip(false);
+                        EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
+                    }
+                    if (Player.transform.position.x > transform.position.x)
+                    {
+                        Flip(true);
+                        EnemyVel.Set(MoveSpeed, JumpSpeed);
+                    }
                 }
-                if (Player.transform.position.x > transform.position.x)
+                else if (Player == null)
                 {
-                    Flip(true);
-                    EnemyVel.Set(MoveSpeed, JumpSpeed);
-                }
-            }
-            else if (Player == null)
-            {
-                Flip(movedirection);
-                if (gameObject.transform.position.x - GroundLocation.max.x <= -2.5 && gameObject.transform.position.x - GroundLocation.min.x >= 2.5)
-                {
-                    if (movedirection == true) EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
-                    else EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
-                }
-                else if (gameObject.transform.position.x - GroundLocation.min.x < 2.5)
-                {
-                    movedirection = true;
                     Flip(movedirection);
-                    EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
+                    if (gameObject.transform.position.x - GroundLocation.max.x <= -2.5 && gameObject.transform.position.x - GroundLocation.min.x >= 2.5)
+                    {
+                        if (movedirection == true) EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
+                        else EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
+                    }
+                    else if (gameObject.transform.position.x - GroundLocation.min.x < 2.5)
+                    {
+                        movedirection = true;
+                        Flip(movedirection);
+                        EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
+                    }
+                    else if (gameObject.transform.position.x - GroundLocation.max.x > -2.5)
+                    {
+                        movedirection = false;
+                        Flip(movedirection);
+                        EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
+                    }
+                    else Debug.Log("move QQ");
                 }
-                else if (gameObject.transform.position.x - GroundLocation.max.x > -2.5)
-                {
-                    movedirection = false;
-                    Flip(movedirection);
-                    EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
-                }
-                else Debug.Log("move QQ");
+                myRigidbody.velocity = EnemyVel;
+                bool EnemyMove = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+                myAnim.SetBool("move", EnemyMove);
             }
-            myRigidbody.velocity = EnemyVel;
-            bool EnemyMove = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
-            myAnim.SetBool("move", EnemyMove);
         }
-
     }
     bool checkGound()
     {

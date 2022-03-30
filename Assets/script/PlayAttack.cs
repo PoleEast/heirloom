@@ -19,9 +19,9 @@ public class PlayAttack : MonoBehaviour
     }
     void attack()
     {
-        if (Input.GetButtonDown("attack") && !(myAnim.GetBool("attack")))
+        if (Input.GetButtonDown("attack"))
         {
-            if (myAnim.GetBool("idle") || myAnim.GetBool("run"))
+            if (myAnim.GetBool("idle") || myAnim.GetBool("run") )
             {
                 gameObject.transform.GetChild(0).gameObject.GetComponent<AttackHitBox>().attack();
                 myRigidbody.velocity = new Vector2(0.0f, 0.0f);
@@ -39,6 +39,9 @@ public class PlayAttack : MonoBehaviour
             myRigidbody.velocity = new Vector2(attackmove, 0.0f);
         else
             myRigidbody.velocity = new Vector2(attackmove * -1, 0.0f);
+    }
+    void animationAttackEven()
+    {
         myAnim.SetBool("idle", true);
         myAnim.SetBool("attack", false);
     }

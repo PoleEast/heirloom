@@ -76,10 +76,6 @@ public class PlayerMove : MonoBehaviour
     {
 
     }
-    void hit()
-    {
-
-    }
     IEnumerator IrollEnd()
     {
         yield return new WaitForSeconds(0.6f);
