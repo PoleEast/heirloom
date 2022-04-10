@@ -19,6 +19,7 @@ public class Camerafllow : MonoBehaviour
             {
                 Vector3 targetPosition = target.position;
                 transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
+                
             }
         }
     }

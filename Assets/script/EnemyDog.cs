@@ -22,15 +22,15 @@ public class EnemyDog : Enemy
     {
         base.Update();
     }
-    protected override void attack()
+    Collider2D IsAttackRange()
     {
-
+        return Physics2D.OverlapCircle((Vector2)transform.position, attackrange, LayerMask.GetMask("Player"));
     }
     protected override void move(Collider2D Player)
     {
         if (HP > 0)
         {
-            if (checkGound())
+            if (checkGound()||!IsAttackRange())
             {
                 Vector2 EnemyVel = new Vector2();
                 if (Player != null)
@@ -72,7 +72,15 @@ public class EnemyDog : Enemy
                 bool EnemyMove = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
                 myAnim.SetBool("move", EnemyMove);
             }
+            else if(IsAttackRange())
+                attack();
         }
+    }
+    protected override void attack()
+    {
+        myAnim.SetBool("attack",true);
+        myAbim.SetBool("idle",false);
+        
     }
     bool checkGound()
     {
@@ -83,16 +91,6 @@ public class EnemyDog : Enemy
         if (other.gameObject.layer == 8)
         {
             GroundLocation = other.collider.bounds;
-        }
-    }
-
-    IEnumerator ItakeDamageshark()
-    {
-        for (int time = 0; time < 60; time++)
-        {
-            myRigidbody.velocity = new Vector2(-0.5f, 0.5f);
-            Debug.Log(time);
-            yield return null;
         }
     }
 }

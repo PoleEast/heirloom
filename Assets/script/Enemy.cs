@@ -8,6 +8,9 @@ abstract public class Enemy : MonoBehaviour
     public int HP;
     public int Damage;
     public GameObject Hitbox;
+    public float attackrange;
+
+    public float EnemyVisualField;
     protected SpriteRenderer spriteRenderer;
     protected Color originalColor;
     protected Animator myAnim;
@@ -18,7 +21,7 @@ abstract public class Enemy : MonoBehaviour
 
     Collider2D IsPlayerview()
     {
-        return Physics2D.OverlapCircle((Vector2)transform.position, 5, LayerMask.GetMask("Player"));
+        return Physics2D.OverlapCircle((Vector2)transform.position, EnemyVisualField, LayerMask.GetMask("Player"));
     }
     //abstract public void die();
 
@@ -32,12 +35,7 @@ abstract public class Enemy : MonoBehaviour
     protected virtual void Update()
     {
         move(IsPlayerview());
-        if (HP <= 0)
-        {
-            myAnim.SetBool("die", true);
-            Hitbox.SetActive(false);
-            Destroy(gameObject, 3);
-        }
+        Die();
     }
     protected void Flip(bool direction)   //true=R false=L
     {
@@ -48,6 +46,15 @@ abstract public class Enemy : MonoBehaviour
         else if (direction == false)
         {
             transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
+    protected void Die()
+    {
+        if (HP <= 0)
+        {
+            myAnim.SetBool("die", true);
+            Hitbox.SetActive(false);
+            Destroy(gameObject, 3);
         }
     }
 }
