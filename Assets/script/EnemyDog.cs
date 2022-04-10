@@ -30,7 +30,7 @@ public class EnemyDog : Enemy
     {
         if (HP > 0)
         {
-            if (checkGound()||!IsAttackRange())
+            if (checkGound() || !IsAttackRange())
             {
                 Vector2 EnemyVel = new Vector2();
                 if (Player != null)
@@ -72,15 +72,15 @@ public class EnemyDog : Enemy
                 bool EnemyMove = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
                 myAnim.SetBool("move", EnemyMove);
             }
-            else if(IsAttackRange())
+            else if (IsAttackRange())
                 attack();
         }
     }
     protected override void attack()
     {
-        myAnim.SetBool("attack",true);
-        myAbim.SetBool("idle",false);
-        
+        myAnim.SetBool("attack", true);
+        myAnim.SetBool("idle", false);
+
     }
     bool checkGound()
     {

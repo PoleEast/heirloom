@@ -17,9 +17,9 @@ public class EnemyAttackBox : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             int Damage = gameObject.transform.parent.gameObject.GetComponent<Enemy>().Damage;
             GameObject.Find("Player").GetComponent<PlayerStats>().TakeDamage(Damage);

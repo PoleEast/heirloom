@@ -35,6 +35,7 @@ public class AttackHitBox : MonoBehaviour
         {
             SpriteRenderer spriteRenderer = collision.gameObject.GetComponent<SpriteRenderer>();
             GameObject.Find("GameControl").GetComponent<GameControl>().TakeDamage(collision.gameObject.GetComponent<Enemy>(), spriteRenderer);
+            Debug.Log("2");
         }
     }
 }

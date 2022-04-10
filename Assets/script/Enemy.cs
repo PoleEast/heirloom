@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-abstract public class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour
 {
     public float flashTime;
     public int HP;
@@ -11,6 +11,7 @@ abstract public class Enemy : MonoBehaviour
     public float attackrange;
 
     public float EnemyVisualField;
+    public GameObject floatPoint;
     protected SpriteRenderer spriteRenderer;
     protected Color originalColor;
     protected Animator myAnim;
