@@ -16,13 +16,11 @@ public class GameControl : MonoBehaviour
     }
     public void TakeDamage(Enemy enemy, SpriteRenderer spriteRenderer)
     {
-        Debug.Log(enemy.HP);
         var Dmage = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>().Damage;
         GameObject gb = Instantiate(floatPoint, enemy.transform.position, Quaternion.identity) as GameObject;
         gb.transform.GetChild(0).GetComponent<TextMesh>().text = Dmage.ToString();
         Color originalColor = new Color();
         enemy.HP = enemy.HP - Dmage;
-        Debug.Log(enemy.HP);
         originalColor = spriteRenderer.color;
         spriteRenderer.color = Color.red;
         StartCoroutine(resetcolor(enemy.flashTime, originalColor, spriteRenderer));

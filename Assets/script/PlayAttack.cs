@@ -7,11 +7,13 @@ public class PlayAttack : MonoBehaviour
     private Animator myAnim;
     private Rigidbody2D myRigidbody;
     public float attackmove;
+    private PlayerStats playerStats;
 
     void Start()
     {
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
+        playerStats = GetComponent<PlayerStats>();
     }
     void Update()
     {
@@ -21,9 +23,8 @@ public class PlayAttack : MonoBehaviour
     {
         if (Input.GetButtonDown("attack"))
         {
-            if (myAnim.GetBool("idle") || myAnim.GetBool("run") )
+            if ((myAnim.GetBool("idle") || myAnim.GetBool("run")) && playerStats.checkGround())
             {
-                gameObject.transform.GetChild(0).gameObject.GetComponent<AttackHitBox>().attack();
                 myRigidbody.velocity = new Vector2(0.0f, 0.0f);
                 myAnim.SetBool("attack", true);
                 myAnim.SetBool("idle", false);

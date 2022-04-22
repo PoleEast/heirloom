@@ -11,7 +11,6 @@ public abstract class Enemy : MonoBehaviour
     public float attackrange;
 
     public float EnemyVisualField;
-    public GameObject floatPoint;
     protected SpriteRenderer spriteRenderer;
     protected Color originalColor;
     protected Animator myAnim;

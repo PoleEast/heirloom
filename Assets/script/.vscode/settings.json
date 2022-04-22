@@ -1,7 +1,7 @@
 {
-    "files.exclude": {
-        "**/.meta ": true,
-        "**/.cs.meta": true
-    },
-    "editor.formatOnSave": true
+  "files.exclude": {
+    "**/.cs.meta": true,
+    "**/.meta ": true
+  },
+  "editor.formatOnSave": true
 }

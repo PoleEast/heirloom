@@ -6,9 +6,11 @@ public class EnemySlime : Enemy
     private GameControl GameControl;
     public float MoveSpeed;
     public float JumpSpeed;
+    public float MoveCDSpeed;
     private BoxCollider2D myFeet;
     private Bounds GroundLocation;
     private bool movedirection;
+    private bool moveCD;
     protected override void Start()
     {
         base.Start();
@@ -17,10 +19,12 @@ public class EnemySlime : Enemy
         myRigidbody = GetComponent<Rigidbody2D>();
         if (Random.Range(0, 2) == 0) movedirection = true;
         else movedirection = false;
+        moveCD = true;
     }
     protected override void Update()
     {
         base.Update();
+        MoveanimationSet();
     }
     protected override void attack()
     {
@@ -30,7 +34,7 @@ public class EnemySlime : Enemy
     {
         if (HP > 0)
         {
-            if (checkGound())
+            if (checkGound() && moveCD == true)
             {
                 Vector2 EnemyVel = new Vector2();
                 if (Player != null)
@@ -69,10 +73,15 @@ public class EnemySlime : Enemy
                     else Debug.Log("move QQ");
                 }
                 myRigidbody.velocity = EnemyVel;
-                bool EnemyMove = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
-                myAnim.SetBool("move", EnemyMove);
+                moveCD = false;
+                StartCoroutine(IMoveCD());
             }
         }
+    }
+    void MoveanimationSet()
+    {
+        bool EnemyMove = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+        myAnim.SetBool("move", EnemyMove);
     }
     bool checkGound()
     {
@@ -91,8 +100,12 @@ public class EnemySlime : Enemy
         for (int time = 0; time < 60; time++)
         {
             myRigidbody.velocity = new Vector2(-0.5f, 0.5f);
-            Debug.Log(time);
             yield return null;
         }
+    }
+    IEnumerator IMoveCD()
+    {
+        yield return new WaitForSeconds(MoveCDSpeed);
+        moveCD = true;
     }
 }
