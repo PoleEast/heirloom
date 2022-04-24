@@ -7,36 +7,42 @@ public class HitBoxManger : MonoBehaviour
     public float Sword1DisTime;
     public float Sword2DisTime;
     public float Sword3DisTime;
+    public float JumpSwordTime;
     public GameObject Sword1;
     public GameObject Sword2;
     public GameObject Sword3;
-    private PolygonCollider2D Sword1HitBox;
-    private PolygonCollider2D Sword2HitBox;
-    private PolygonCollider2D Sword3HitBox;
+    public GameObject JumpSword;
+    private PolygonCollider2D sword1HitBox;
+    private PolygonCollider2D sword2HitBox;
+    private PolygonCollider2D sword3HitBox;
+    private PolygonCollider2D jumpSword;
 
     void Start()
     {
-        Sword1HitBox = Sword1.GetComponent<PolygonCollider2D>();
-        Sword2HitBox = Sword2.GetComponent<PolygonCollider2D>();
-        Sword3HitBox = Sword3.GetComponent<PolygonCollider2D>();
+        sword1HitBox = Sword1.GetComponent<PolygonCollider2D>();
+        sword2HitBox = Sword2.GetComponent<PolygonCollider2D>();
+        sword3HitBox = Sword3.GetComponent<PolygonCollider2D>();
+        jumpSword = JumpSword.GetComponent<PolygonCollider2D>();
     }
     void Sword1HitBoxON()
     {
-        Sword1HitBox.enabled = true;
-        Debug.Log("Sword1" + Sword1HitBox.isActiveAndEnabled);
-        StartCoroutine(disActiveHitBox(Sword1DisTime, Sword1HitBox));
+        sword1HitBox.enabled = true;
+        StartCoroutine(disActiveHitBox(Sword1DisTime, sword1HitBox));
     }
     void Sword2HitBoxON()
     {
-        Sword2HitBox.enabled = true;
-        Debug.Log("Sword2" + Sword2HitBox.isActiveAndEnabled);
-        StartCoroutine(disActiveHitBox(Sword2DisTime, Sword2HitBox));
+        sword2HitBox.enabled = true;
+        StartCoroutine(disActiveHitBox(Sword2DisTime, sword2HitBox));
     }
     void Sword3HitBoxON()
     {
-        Sword3HitBox.enabled = true;
-        Debug.Log("Sword3" + Sword3HitBox.isActiveAndEnabled);
-        StartCoroutine(disActiveHitBox(Sword3DisTime, Sword3HitBox));
+        sword3HitBox.enabled = true;
+        StartCoroutine(disActiveHitBox(Sword3DisTime, sword3HitBox));
+    }
+    void JumpSwordHitBoxON()
+    {
+        jumpSword.enabled = true;
+        StartCoroutine(disActiveHitBox(Sword3DisTime, jumpSword));
     }
     IEnumerator disActiveHitBox(float disTime, PolygonCollider2D hitBox)
     {

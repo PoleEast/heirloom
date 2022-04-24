@@ -8,12 +8,14 @@ public class PlayAttack : MonoBehaviour
     private Rigidbody2D myRigidbody;
     public float attackmove;
     private PlayerStats playerStats;
+    private PlayerMove playerMove;
 
     void Start()
     {
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         playerStats = GetComponent<PlayerStats>();
+        playerMove = GetComponent<PlayerMove>();
     }
     void Update()
     {
@@ -28,9 +30,16 @@ public class PlayAttack : MonoBehaviour
                 myRigidbody.velocity = new Vector2(0.0f, 0.0f);
                 myAnim.SetBool("attack", true);
                 myAnim.SetBool("idle", false);
+                playerMove.enabled = false;
                 StartCoroutine(IAttackWork());
             }
-            //else if
+            else if (myAnim.GetBool("jump"))
+            {
+                myAnim.SetBool("attack", true);
+                myAnim.SetBool("idle", false);
+                playerMove.enabled = false;
+                StartCoroutine(IAttackWork());
+            }
         }
     }
     protected IEnumerator IAttackWork()
@@ -45,5 +54,6 @@ public class PlayAttack : MonoBehaviour
     {
         myAnim.SetBool("idle", true);
         myAnim.SetBool("attack", false);
+        playerMove.enabled = true;
     }
 }

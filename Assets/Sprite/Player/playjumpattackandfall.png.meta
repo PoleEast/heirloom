@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 8c41206fda2c1db4aa908c0fe797a9a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8987949184765494520
+    second: playjumpattackandfall_0
+  - first:
+      213: 8815113253020999010
+    second: playjumpattackandfall_1
+  - first:
+      213: -8489830323019070034
+    second: playjumpattackandfall_2
+  - first:
+      213: -7641416559399688186
+    second: playjumpattackandfall_3
+  - first:
+      213: -6015318108794124132
+    second: playjumpattackandfall_4
+  - first:
+      213: -1345812642227564818
+    second: playjumpattackandfall_5
+  - first:
+      213: 1273105176368423541
+    second: playjumpattackandfall_6
+  - first:
+      213: -3919732390182906680
+    second: playjumpattackandfall_7
+  - first:
+      213: -2076810059406867139
+    second: playjumpattackandfall_8
+  - first:
+      213: 2502246488915888611
+    second: playjumpattackandfall_9
+  - first:
+      213: -6519405920264743282
+    second: playjumpattackandfall_10
+  - first:
+      213: 2970850172645048111
+    second: playjumpattackandfall_11
+  - first:
+      213: 7972811820399167868
+    second: playjumpattackandfall_12
+  - first:
+      213: -5621404298860736039
+    second: playjumpattackandfall_13
+  - first:
+      213: -2749589764445269227
+    second: playjumpattackandfall_14
+  - first:
+      213: -2802234197150036868
+    second: playjumpattackandfall_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playjumpattackandfall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 189
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b7ace26d3644380800000000000000
+      internalID: -8987949184765494520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 189
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d97259cc2955a70800000000000000
+      internalID: 8815113253020999010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 189
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5659249, y: 0.15905568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5cb116d401e2a80800000000000000
+      internalID: -8489830323019070034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 189
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5179796, y: 0.22602724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608a13c002c34f590800000000000000
+      internalID: -7641416559399688186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.48801365, y: 0.244292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c980a52fc0c458ca0800000000000000
+      internalID: -6015318108794124132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 126
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.44606173, y: 0.34170434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeecbc54886b25de0800000000000000
+      internalID: -1345812642227564818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 126
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5059931, y: 0.34779286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572a627a96afaa110800000000000000
+      internalID: 1273105176368423541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 126
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.49400687, y: 0.34779286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c41e84a8205a99c0800000000000000
+      internalID: -3919732390182906680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4820205, y: 0.353881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35881f1140bd23e0800000000000000
+      internalID: -2076810059406867139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.47003436, y: 0.353881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9cc489ce3c9b220800000000000000
+      internalID: 2502246488915888611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 63
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.6738014, y: 0.17732081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e869a085bda6685a0800000000000000
+      internalID: -6519405920264743282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 63
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.6664398, y: 0.16183521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f7a65ed749a3920800000000000000
+      internalID: 2970850172645048111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.67832875, y: 0.17391275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c798defdb1e15ae60800000000000000
+      internalID: 7972811820399167868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.6723844, y: 0.17391275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d15d8bd292ccf1b0800000000000000
+      internalID: -5621404298860736039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.67238426, y: 0.17391275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513903c5dae77d9d0800000000000000
+      internalID: -2749589764445269227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playjumpattackandfall_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.67832875, y: 0.1678741}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c8b6538d67c19d0800000000000000
+      internalID: -2802234197150036868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

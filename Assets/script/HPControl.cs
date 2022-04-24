@@ -14,7 +14,6 @@ public class HPControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(HPText.GetComponent<Text>().text);
         MaxHP = GameObject.Find("Player").GetComponent<PlayerStats>().MaxHP;
         HPText.GetComponent<Text>().text = MaxHP + "/" + MaxHP;
     }
