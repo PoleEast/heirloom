@@ -3968,7 +3968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2018396517
 Transform:
   m_ObjectHideFlags: 0
@@ -4040,6 +4040,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8575933203139463845, guid: 9e86be5e76df862419e55ee181142fce,
         type: 3}
+    - target: {fileID: 2413016702825769220, guid: 8e488a04ad0a64c42ae60ae2937cb835,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413016702825769220, guid: 8e488a04ad0a64c42ae60ae2937cb835,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413016702825769220, guid: 8e488a04ad0a64c42ae60ae2937cb835,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2413016702825769220, guid: 8e488a04ad0a64c42ae60ae2937cb835,
         type: 3}
       propertyPath: m_SortingOrder
@@ -4158,12 +4173,12 @@ PrefabInstance:
     - target: {fileID: 3029297818147868438, guid: 8e488a04ad0a64c42ae60ae2937cb835,
         type: 3}
       propertyPath: JumpSpeed
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029297818147868438, guid: 8e488a04ad0a64c42ae60ae2937cb835,
         type: 3}
       propertyPath: MoveSpeed
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029297818147868438, guid: 8e488a04ad0a64c42ae60ae2937cb835,
         type: 3}
@@ -4427,6 +4442,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3120869530953903246, guid: 08b1b80a52c6ad84cb25c6a254b49c8a,
         type: 3}
+    - target: {fileID: 8528877783850240128, guid: 7ba604750e4bdc147b327166cf5f5c9a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528877783850240128, guid: 7ba604750e4bdc147b327166cf5f5c9a,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528877783850240128, guid: 7ba604750e4bdc147b327166cf5f5c9a,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528877783850240128, guid: 7ba604750e4bdc147b327166cf5f5c9a,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8528877783850240128, guid: 7ba604750e4bdc147b327166cf5f5c9a,
         type: 3}
       propertyPath: m_SortingOrder

@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    public float TakeDamageSwitchColorTime;
+    public float TakeDamageCDTime;
     public int MaxHP;
     public int Damage;
     public float flashTime;
     [HideInInspector]
     public int currentHP;
     protected Rigidbody2D myRigidbody;
+    private bool TakeDamageCD;
     protected Animator myAnim;
     protected BoxCollider2D myFeet;
     protected CapsuleCollider2D mybody;
     protected bool oriented;    //true=R false=f
     private GameObject PlayerHPBar;
+    private SpriteRenderer mySpriteRenderer;
+    private Color originalColor;
 
     void Start()
     {
-
+        TakeDamageCD = false;
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         myFeet = GetComponent<BoxCollider2D>();
@@ -26,6 +31,8 @@ public class PlayerStats : MonoBehaviour
         PlayerHPBar = GameObject.Find("PlayerBar");
         myAnim.SetBool("idle", true);
         currentHP = MaxHP;
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+        originalColor = mySpriteRenderer.color;
     }
 
     // Update is called once per frame
@@ -88,11 +95,15 @@ public class PlayerStats : MonoBehaviour
     }
     public void TakeDamage(int Damage)
     {
-        if (!(myAnim.GetBool("roll")))
+        if (!(myAnim.GetBool("roll")) && !TakeDamageCD)
         {
             currentHP = currentHP - Damage;
             PlayerHPBar.GetComponent<HPControl>().UpDateHPText(currentHP);
+            StartCoroutine(IwaitforSec(TakeDamageCDTime));
             hit();
+            TakeDamageCD = true;
+            StartCoroutine(ITakeDamageSwitchColor());
+            Debug.Log("a");
         }
     }
     void moveforWard(float Xspeed, float Yspeed)
@@ -122,6 +133,23 @@ public class PlayerStats : MonoBehaviour
         {
             AbleToControl(true);
         }
+    }
+    IEnumerator ITakeDamageCD(float sec)
+    {
+        TakeDamageCD = false;
+        yield return new WaitForSeconds(sec);
+        TakeDamageCD = true;
+    }
+    IEnumerator ITakeDamageSwitchColor()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            mySpriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.3f);
+            mySpriteRenderer.color = originalColor;
+            yield return new WaitForSeconds(0.3f);
+        }
+        TakeDamageCD = false;
     }
 }
 
