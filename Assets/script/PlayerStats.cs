@@ -144,7 +144,7 @@ public class PlayerStats : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            mySpriteRenderer.color = Color.white;
+            mySpriteRenderer.color = Color.red;
             yield return new WaitForSeconds(0.3f);
             mySpriteRenderer.color = originalColor;
             yield return new WaitForSeconds(0.3f);

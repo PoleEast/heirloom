@@ -73,10 +73,10 @@ public class EnemyDog : Enemy
                 myAnim.SetBool("move", EnemyMove);
             }
             else if (IsAttackRange())
-                attack();
+                attack(IsAttackRange());
         }
     }
-    protected override void attack()
+    protected override void attack(Collider2D Player)
     {
         myAnim.SetBool("attack", true);
         myAnim.SetBool("idle", false);

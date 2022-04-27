@@ -7,15 +7,15 @@ public class EnemySlime : Enemy
     public float MoveSpeed;
     public float JumpSpeed;
     public float MoveCDSpeed;
-    private BoxCollider2D myFeet;
+    public float AttackCDSpeed;
     private Bounds GroundLocation;
     private bool movedirection;
     private bool moveCD;
+    private bool attackCD;
     protected override void Start()
     {
         base.Start();
         GameControl = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControl>();
-        myFeet = GetComponent<BoxCollider2D>();
         myRigidbody = GetComponent<Rigidbody2D>();
         if (Random.Range(0, 2) == 0) movedirection = true;
         else movedirection = false;
@@ -24,68 +24,58 @@ public class EnemySlime : Enemy
     protected override void Update()
     {
         base.Update();
-        MoveanimationSet();
     }
-    protected override void attack()
+    protected override void attack(Collider2D Player)
     {
-
+        myAnim.SetBool("attack", true);
+        myAnim.SetBool("idle", false);
     }
     protected override void move(Collider2D Player)
     {
-        if (HP > 0)
+        if (moveCD)
         {
-            if (checkGound() && moveCD == true)
+            Vector2 EnemyVel = new Vector2();
+            if (Player != null)
             {
-                Vector2 EnemyVel = new Vector2();
-                if (Player != null)
+                if (Player.transform.position.x < transform.position.x)
                 {
-                    if (Player.transform.position.x < transform.position.x)
-                    {
-                        Flip(false);
-                        EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
-                    }
-                    if (Player.transform.position.x > transform.position.x)
-                    {
-                        Flip(true);
-                        EnemyVel.Set(MoveSpeed, JumpSpeed);
-                    }
+                    Flip(false);
+                    EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
                 }
-                else if (Player == null)
+                if (Player.transform.position.x > transform.position.x)
                 {
-                    Flip(movedirection);
-                    if (gameObject.transform.position.x - GroundLocation.max.x <= -2.5 && gameObject.transform.position.x - GroundLocation.min.x >= 2.5)
-                    {
-                        if (movedirection == true) EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
-                        else EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
-                    }
-                    else if (gameObject.transform.position.x - GroundLocation.min.x < 2.5)
-                    {
-                        movedirection = true;
-                        Flip(movedirection);
-                        EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
-                    }
-                    else if (gameObject.transform.position.x - GroundLocation.max.x > -2.5)
-                    {
-                        movedirection = false;
-                        Flip(movedirection);
-                        EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
-                    }
-                    else Debug.Log("move QQ");
+                    Flip(true);
+                    EnemyVel.Set(MoveSpeed, JumpSpeed);
                 }
-                myRigidbody.velocity = EnemyVel;
-                moveCD = false;
-                StartCoroutine(IMoveCD());
             }
+            else if (Player == null)
+            {
+                Flip(movedirection);
+                if (gameObject.transform.position.x - GroundLocation.max.x <= -2.5 && gameObject.transform.position.x - GroundLocation.min.x >= 2.5)
+                {
+                    if (movedirection == true) EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
+                    else EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
+                }
+                else if (gameObject.transform.position.x - GroundLocation.min.x < 2.5)
+                {
+                    movedirection = true;
+                    Flip(movedirection);
+                    EnemyVel.Set(MoveSpeed * 1, JumpSpeed);
+                }
+                else if (gameObject.transform.position.x - GroundLocation.max.x > -2.5)
+                {
+                    movedirection = false;
+                    Flip(movedirection);
+                    EnemyVel.Set(MoveSpeed * -1, JumpSpeed);
+                }
+                else Debug.Log(this + "NO move");
+            }
+            myRigidbody.velocity = EnemyVel;
+            moveCD = false;
+            myAnim.SetBool("move", true);
+            myAnim.SetBool("idle", false);
+            StartCoroutine(IMoveCD());
         }
-    }
-    void MoveanimationSet()
-    {
-        bool EnemyMove = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
-        myAnim.SetBool("move", EnemyMove);
-    }
-    bool checkGound()
-    {
-        return myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
     }
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -94,14 +84,16 @@ public class EnemySlime : Enemy
             GroundLocation = other.collider.bounds;
         }
     }
+    void animationMoveOff()
+    {
+        myAnim.SetBool("idle", true);
+        myAnim.SetBool("move", false);
 
+    }
     IEnumerator ItakeDamageshark()
     {
-        for (int time = 0; time < 60; time++)
-        {
-            myRigidbody.velocity = new Vector2(-0.5f, 0.5f);
-            yield return null;
-        }
+        myRigidbody.velocity = new Vector2(-0.5f, 0.5f);
+        yield return null;
     }
     IEnumerator IMoveCD()
     {

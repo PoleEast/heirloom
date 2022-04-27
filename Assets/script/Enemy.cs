@@ -15,15 +15,9 @@ public abstract class Enemy : MonoBehaviour
     protected Color originalColor;
     protected Animator myAnim;
     protected Rigidbody2D myRigidbody;
-    abstract protected void attack();
+    private BoxCollider2D myFeet;
+    abstract protected void attack(Collider2D Player);
     abstract protected void move(Collider2D Player);
-
-
-    Collider2D IsPlayerview()
-    {
-        return Physics2D.OverlapCircle((Vector2)transform.position, EnemyVisualField, LayerMask.GetMask("Player"));
-    }
-    //abstract public void die();
 
     protected virtual void Start()
     {
@@ -31,12 +25,43 @@ public abstract class Enemy : MonoBehaviour
         originalColor = spriteRenderer.color;
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
+        myFeet = GetComponent<BoxCollider2D>();
     }
     protected virtual void Update()
     {
-        move(IsPlayerview());
-        Die();
+        StateCheese();
     }
+
+    Collider2D IsPlayerview()
+    {
+        return Physics2D.OverlapCircle((Vector2)transform.position, EnemyVisualField, LayerMask.GetMask("Player"));
+    }
+    Collider2D IsAttackRange()
+    {
+        return Physics2D.OverlapCircle((Vector2)transform.position, attackrange, LayerMask.GetMask("Player"));
+    }
+
+    void StateCheese()
+    {
+        if (HP >= 0)
+        {
+            if (checkGound())
+                if (IsAttackRange())
+                {
+                    attack(IsAttackRange());
+                }
+                else
+                    move(IsPlayerview());
+        }
+        else
+            Die();
+    }
+
+    protected bool checkGound()
+    {
+        return myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
+    }
+
     protected void Flip(bool direction)   //true=R false=L
     {
         if (direction == true)
@@ -50,11 +75,8 @@ public abstract class Enemy : MonoBehaviour
     }
     protected void Die()
     {
-        if (HP <= 0)
-        {
-            myAnim.SetBool("die", true);
-            Hitbox.SetActive(false);
-            Destroy(gameObject, 3);
-        }
+        myAnim.SetBool("die", true);
+        Hitbox.SetActive(false);
+        Destroy(gameObject, 3);
     }
 }
