@@ -26,23 +26,35 @@ public class HitBoxManger : MonoBehaviour
     }
     void Sword1HitBoxON()
     {
-        sword1HitBox.enabled = true;
-        StartCoroutine(disActiveHitBox(Sword1DisTime, sword1HitBox));
+        if (sword1HitBox != null)
+        {
+            sword1HitBox.enabled = true;
+            StartCoroutine(disActiveHitBox(Sword1DisTime, sword1HitBox));
+        }
     }
     void Sword2HitBoxON()
     {
-        sword2HitBox.enabled = true;
-        StartCoroutine(disActiveHitBox(Sword2DisTime, sword2HitBox));
+        if (sword2HitBox != null)
+        {
+            sword2HitBox.enabled = true;
+            StartCoroutine(disActiveHitBox(Sword2DisTime, sword2HitBox));
+        }
     }
     void Sword3HitBoxON()
     {
-        sword3HitBox.enabled = true;
-        StartCoroutine(disActiveHitBox(Sword3DisTime, sword3HitBox));
+        if (sword3HitBox != null)
+        {
+            sword3HitBox.enabled = true;
+            StartCoroutine(disActiveHitBox(Sword3DisTime, sword3HitBox));
+        }
     }
     void JumpSwordHitBoxON()
     {
-        jumpSword.enabled = true;
-        StartCoroutine(disActiveHitBox(Sword3DisTime, jumpSword));
+        if (jumpSword != null)
+        {
+            jumpSword.enabled = true;
+            StartCoroutine(disActiveHitBox(Sword3DisTime, jumpSword));
+        }
     }
     IEnumerator disActiveHitBox(float disTime, PolygonCollider2D hitBox)
     {

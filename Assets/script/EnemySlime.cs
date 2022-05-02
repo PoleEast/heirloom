@@ -24,6 +24,22 @@ public class EnemySlime : Enemy
     protected override void Update()
     {
         base.Update();
+        StateCheese();
+    }
+    void StateCheese()
+    {
+        if (HP >= 0)
+        {
+            if (checkGound())
+                if (IsAttackRange())
+                {
+                    attack(IsAttackRange());
+                }
+                else
+                    move(IsPlayerview());
+        }
+        else
+            Die();
     }
     protected override void attack(Collider2D Player)
     {

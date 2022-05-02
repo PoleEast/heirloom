@@ -29,33 +29,18 @@ public abstract class Enemy : MonoBehaviour
     }
     protected virtual void Update()
     {
-        StateCheese();
+
     }
 
-    Collider2D IsPlayerview()
+    protected Collider2D IsPlayerview()
     {
         return Physics2D.OverlapCircle((Vector2)transform.position, EnemyVisualField, LayerMask.GetMask("Player"));
     }
-    Collider2D IsAttackRange()
+    protected Collider2D IsAttackRange()
     {
         return Physics2D.OverlapCircle((Vector2)transform.position, attackrange, LayerMask.GetMask("Player"));
     }
 
-    void StateCheese()
-    {
-        if (HP >= 0)
-        {
-            if (checkGound())
-                if (IsAttackRange())
-                {
-                    attack(IsAttackRange());
-                }
-                else
-                    move(IsPlayerview());
-        }
-        else
-            Die();
-    }
 
     protected bool checkGound()
     {

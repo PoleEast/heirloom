@@ -13,7 +13,6 @@ public class EnemyDog : Enemy
     {
         base.Start();
         GameControl = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControl>();
-        myFeet = GetComponent<BoxCollider2D>();
         myRigidbody = GetComponent<Rigidbody2D>();
         if (Random.Range(0, 2) == 0) movedirection = true;
         else movedirection = false;
@@ -22,10 +21,7 @@ public class EnemyDog : Enemy
     {
         base.Update();
     }
-    Collider2D IsAttackRange()
-    {
-        return Physics2D.OverlapCircle((Vector2)transform.position, attackrange, LayerMask.GetMask("Player"));
-    }
+
     protected override void move(Collider2D Player)
     {
         if (HP > 0)
@@ -81,10 +77,6 @@ public class EnemyDog : Enemy
         myAnim.SetBool("attack", true);
         myAnim.SetBool("idle", false);
 
-    }
-    bool checkGound()
-    {
-        return myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
     }
     void OnCollisionEnter2D(Collision2D other)
     {

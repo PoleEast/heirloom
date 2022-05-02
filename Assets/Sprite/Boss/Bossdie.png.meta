@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: c1cbe718d45d1504d80295e27c5cf9b8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2966944130317064359
+    second: Bossdie_0
+  - first:
+      213: -4678045976559969361
+    second: Bossdie_1
+  - first:
+      213: 8464988403565922515
+    second: Bossdie_2
+  - first:
+      213: -1744906499706537650
+    second: Bossdie_3
+  - first:
+      213: -8665791665236127594
+    second: Bossdie_4
+  - first:
+      213: -5791647732684179363
+    second: Bossdie_5
+  - first:
+      213: -3946390977969125803
+    second: Bossdie_6
+  - first:
+      213: 2415814221170455387
+    second: Bossdie_7
+  - first:
+      213: 3681655514424212872
+    second: Bossdie_8
+  - first:
+      213: 4831001532753266954
+    second: Bossdie_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +70,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +101,231 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bossdie_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9576504780c43d6d0800000000000000
+      internalID: -2966944130317064359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bossdie_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 368
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab923c38fd341fb0800000000000000
+      internalID: -4678045976559969361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bossdie_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 368
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d809568a1ea97570800000000000000
+      internalID: 8464988403565922515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bossdie_3
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 368
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49b8be88c8d8c7e0800000000000000
+      internalID: -1744906499706537650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bossdie_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6905f00d46cecb780800000000000000
+      internalID: -8665791665236127594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bossdie_5
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 184
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58b925921fef9fa0800000000000000
+      internalID: -5791647732684179363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bossdie_6
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 184
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556085d705a9b39c0800000000000000
+      internalID: -3946390977969125803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bossdie_7
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 184
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53b3301c32b68120800000000000000
+      internalID: 2415814221170455387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bossdie_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dfc922f2ed71330800000000000000
+      internalID: 3681655514424212872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bossdie_9
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 137
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09402d5c4a2b0340800000000000000
+      internalID: 4831001532753266954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
