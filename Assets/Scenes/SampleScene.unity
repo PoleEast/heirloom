@@ -3763,6 +3763,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime
       objectReference: {fileID: 0}
+    - target: {fileID: 3029297818147868438, guid: 8e488a04ad0a64c42ae60ae2937cb835,
+        type: 3}
+      propertyPath: attackrange
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e488a04ad0a64c42ae60ae2937cb835, type: 3}
 --- !u!1001 &2730588973252189204
@@ -3780,17 +3785,47 @@ PrefabInstance:
     - target: {fileID: 2730588973205131936, guid: 19b83a92d2f009c40bf48f3049925a70,
         type: 3}
       propertyPath: Damage
-      value: 0
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730588973205131936, guid: 19b83a92d2f009c40bf48f3049925a70,
+        type: 3}
+      propertyPath: MoveSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2730588973205131936, guid: 19b83a92d2f009c40bf48f3049925a70,
         type: 3}
       propertyPath: attackrange
-      value: 1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730588973205131936, guid: 19b83a92d2f009c40bf48f3049925a70,
+        type: 3}
+      propertyPath: SkillCDSpeed
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2730588973205131936, guid: 19b83a92d2f009c40bf48f3049925a70,
         type: 3}
       propertyPath: AttackMoveSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730588973205131940, guid: 19b83a92d2f009c40bf48f3049925a70,
+        type: 3}
+      propertyPath: Sword1DisTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730588973205131940, guid: 19b83a92d2f009c40bf48f3049925a70,
+        type: 3}
+      propertyPath: Sword2DisTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730588973205131941, guid: 19b83a92d2f009c40bf48f3049925a70,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730588973205131942, guid: 19b83a92d2f009c40bf48f3049925a70,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2730588973205131961, guid: 19b83a92d2f009c40bf48f3049925a70,
         type: 3}
