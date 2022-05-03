@@ -103,7 +103,6 @@ public class PlayerStats : MonoBehaviour
             hit();
             TakeDamageCD = true;
             StartCoroutine(ITakeDamageSwitchColor());
-            Debug.Log("a");
         }
     }
     void moveforWard(float Xspeed, float Yspeed)

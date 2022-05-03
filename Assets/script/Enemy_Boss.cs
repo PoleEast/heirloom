@@ -68,8 +68,7 @@ public class Enemy_Boss : Enemy
         myRigidbody.velocity = EnemyVel;
     }
     void skill1()
-    {
-        Debug.Log("skill");
+    {;
         Vector2 EnemyVel = new Vector2();
         EnemyVel.Set(0, 0);
         myRigidbody.velocity = EnemyVel;
@@ -93,7 +92,6 @@ public class Enemy_Boss : Enemy
                     if (myAnim.GetBool("move") || myAnim.GetBool("idle"))
                     {
                         EnemyVel.Set(MoveSpeed * -1, 0);
-                        Debug.Log(myAnim.GetBool("move") || myAnim.GetBool("idle"));
                     }
                 }
                 if (Player.transform.position.x > transform.position.x)
@@ -103,7 +101,6 @@ public class Enemy_Boss : Enemy
                     if (myAnim.GetBool("move") || myAnim.GetBool("idle"))
                     {
                         EnemyVel.Set(MoveSpeed, 0);
-                        Debug.Log(myAnim.GetBool("move") || myAnim.GetBool("idle"));
                     }
                 }
             }
