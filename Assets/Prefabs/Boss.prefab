@@ -166,7 +166,6 @@ GameObject:
   - component: {fileID: 2730588973205131943}
   - component: {fileID: 2730588973205131942}
   - component: {fileID: 2730588973205131941}
-  - component: {fileID: 2730588973205131940}
   - component: {fileID: 2730588973205131936}
   m_Layer: 10
   m_Name: Boss
@@ -309,26 +308,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.64, y: 3.76}
   m_EdgeRadius: 0
---- !u!114 &2730588973205131940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2730588973205131961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 684045ede01e4744984b7d2d77c15b4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Sword1DisTime: 0.3
-  Sword2DisTime: 2
-  Sword3DisTime: 0
-  JumpSwordTime: 0
-  Sword1: {fileID: 2730588974225128248}
-  Sword2: {fileID: 2730588972751476605}
-  Sword3: {fileID: 0}
-  JumpSword: {fileID: 0}
 --- !u!114 &2730588973205131936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +327,6 @@ MonoBehaviour:
   attackrange: 5
   EnemyVisualField: 20
   MoveSpeed: 2
-  MoveCDSpeed: 0
   AttackCDSpeed: 1
   SkillCDSpeed: 1
   AttackMoveSpeed: 1
