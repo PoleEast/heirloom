@@ -13,7 +13,7 @@ public class BossHitBoxManage : MonoBehaviour
     protected virtual void Start()
     {
         Attack_1HitBox = Attack_1.GetComponent<PolygonCollider2D>();
-        SkillHitBox=skill.GetComponent<PolygonCollider2D>();
+        SkillHitBox = skill.GetComponent<PolygonCollider2D>();
     }
 
 

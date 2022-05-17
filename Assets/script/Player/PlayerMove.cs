@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    private BoxCollider2D myFeet;
-    private Rigidbody2D myRigidbody;
-    private Animator myAnim;
+
     public float Runspeed;
     public float Jumpspeed;
     public float Rollspeed;
+    public float RollCDTime;
+    private bool CanRoll;
+    private BoxCollider2D myFeet;
+    private Rigidbody2D myRigidbody;
+    private Animator myAnim;
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
-
+        CanRoll = true;
     }
     void LateUpdate()
     {
@@ -55,7 +58,8 @@ public class PlayerMove : MonoBehaviour
 
     void roll()
     {
-        if (Input.GetButtonDown("roll") && (myAnim.GetBool("run") || myAnim.GetBool("idle")) && !(myAnim.GetCurrentAnimatorStateInfo(0).IsName("roll")))
+        if (Input.GetButtonDown("roll") && (myAnim.GetCurrentAnimatorStateInfo(0).IsName("run") == true ||
+        myAnim.GetCurrentAnimatorStateInfo(0).IsName("idle") == true) && !(myAnim.GetCurrentAnimatorStateInfo(0).IsName("roll")) && CanRoll)
         {
             myAnim.SetBool("roll", true);
             myAnim.SetBool("idle", false);
@@ -64,7 +68,9 @@ public class PlayerMove : MonoBehaviour
                 moveforWard(Rollspeed, myRigidbody.velocity.y);
             else
                 moveforWard(Rollspeed * -1, myRigidbody.velocity.y);
+            CanRoll = false;
             StartCoroutine(IrollEnd());
+            StartCoroutine(IrollCDTime());
         }
     }
     void moveforWard(float Xspeed, float Yspeed)
@@ -81,5 +87,10 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(0.6f);
         myAnim.SetBool("idle", true);
         myAnim.SetBool("roll", false);
+    }
+    IEnumerator IrollCDTime()
+    {
+        yield return new WaitForSeconds(RollCDTime);
+        CanRoll = true;
     }
 }

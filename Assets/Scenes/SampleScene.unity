@@ -3819,7 +3819,7 @@ PrefabInstance:
     - target: {fileID: 2413016702825769240, guid: 8e488a04ad0a64c42ae60ae2937cb835,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3029297818147868438, guid: 8e488a04ad0a64c42ae60ae2937cb835,
         type: 3}
@@ -3853,7 +3853,7 @@ PrefabInstance:
     - target: {fileID: 2730588972902012987, guid: 19b83a92d2f009c40bf48f3049925a70,
         type: 3}
       propertyPath: Damage
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2730588973205131936, guid: 19b83a92d2f009c40bf48f3049925a70,
         type: 3}
@@ -3873,7 +3873,7 @@ PrefabInstance:
     - target: {fileID: 2730588973205131936, guid: 19b83a92d2f009c40bf48f3049925a70,
         type: 3}
       propertyPath: MoveSpeed
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2730588973205131936, guid: 19b83a92d2f009c40bf48f3049925a70,
         type: 3}
@@ -3910,6 +3910,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730588973205131961, guid: 19b83a92d2f009c40bf48f3049925a70,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2730588973205131963, guid: 19b83a92d2f009c40bf48f3049925a70,
         type: 3}
@@ -4069,11 +4074,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2382028147730716198, guid: abcb875cee223e74dbc2c69cf63ca525,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382028147730716198, guid: abcb875cee223e74dbc2c69cf63ca525,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2615539965450688537, guid: abcb875cee223e74dbc2c69cf63ca525,
         type: 3}
       propertyPath: HpBar
       value: 
       objectReference: {fileID: 522802208}
+    - target: {fileID: 4999613620699379748, guid: abcb875cee223e74dbc2c69cf63ca525,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4999613620706172897, guid: abcb875cee223e74dbc2c69cf63ca525,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4184,6 +4204,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7285179235021167962, guid: abcb875cee223e74dbc2c69cf63ca525,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 943.02185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285179235021167962, guid: abcb875cee223e74dbc2c69cf63ca525,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -632.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051169492756048631, guid: abcb875cee223e74dbc2c69cf63ca525,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abcb875cee223e74dbc2c69cf63ca525, type: 3}
 --- !u!1 &4999613621148333518 stripped
@@ -4199,6 +4234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1170748115, guid: 7ba604750e4bdc147b327166cf5f5c9a, type: 3}
+      propertyPath: RollCDTime
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1170748122, guid: 7ba604750e4bdc147b327166cf5f5c9a, type: 3}
       propertyPath: JumpSword
       value: 
@@ -4380,7 +4419,7 @@ PrefabInstance:
     - target: {fileID: 8528877783850240135, guid: 7ba604750e4bdc147b327166cf5f5c9a,
         type: 3}
       propertyPath: Damage
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8528877783850240135, guid: 7ba604750e4bdc147b327166cf5f5c9a,
         type: 3}
