@@ -6,7 +6,6 @@ public class Enemy_Boss : Enemy
 {
     private GameControl GameControl;
     public float MoveSpeed;
-    public float AttackCDSpeed;
     public float SkillCDSpeed;
     public float AttackMoveSpeed;
     public GameObject SkillFlash;
@@ -15,6 +14,7 @@ public class Enemy_Boss : Enemy
     private bool attackCD;
     private bool Skill1CD;
     private bool attackState;
+    private int attackchoose;
 
     protected override void Start()
     {
@@ -41,7 +41,16 @@ public class Enemy_Boss : Enemy
                     skill1();
                 else if (IsAttackRange())
                 {
-                    attack(IsAttackRange());
+                    attackchoose = Random.Range(0, 2);
+                    switch (attackchoose)
+                    {
+                        case 0:
+                            attack(IsAttackRange());
+                            break;
+                        case 1:
+                            attack_2(IsAttackRange());
+                            break;
+                    }
                 }
                 else if (checkGound())
                     move(IsPlayerview());
@@ -56,6 +65,14 @@ public class Enemy_Boss : Enemy
         myAnim.SetBool("move", false);
         myAnim.SetBool("idle", false);
         myAnim.SetBool("attack", true);
+    }
+    void attack_2(Collider2D Player)
+    {
+        attackState = true;
+        myRigidbody.velocity.Set(0, 0);
+        myAnim.SetBool("move", false);
+        myAnim.SetBool("idle", false);
+        myAnim.SetBool("attack2", true);
     }
     void attackMoveWork()
     {
@@ -159,6 +176,12 @@ public class Enemy_Boss : Enemy
     {
         myAnim.SetBool("idle", true);
         myAnim.SetBool("skill1", false);
+        attackState = false;
+    }
+    void animationAttack2off()
+    {
+        myAnim.SetBool("idle", true);
+        myAnim.SetBool("attack2", false);
         attackState = false;
     }
     IEnumerator ItakeDamageshark()
