@@ -3,5 +3,6 @@
     "**/.cs.meta": true,
     "**/.meta ": true
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "omnisharp.useGlobalMono": "never"
 }
