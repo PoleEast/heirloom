@@ -7,7 +7,6 @@ public class EnemySlime : Enemy
     public float MoveSpeed;
     public float JumpSpeed;
     public float StateCDSpeed;
-    private Bounds GroundLocation;
     private bool movedirection;
     private bool stateCD;
 
@@ -99,13 +98,6 @@ public class EnemySlime : Enemy
     {
         myAnim.SetBool("idle", true);
         myAnim.SetBool("move", false);
-    }
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.layer == 8)
-        {
-            GroundLocation = other.collider.bounds;
-        }
     }
     IEnumerator ItakeDamageshark()
     {

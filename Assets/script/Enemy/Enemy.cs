@@ -16,6 +16,7 @@ public abstract class Enemy : MonoBehaviour
     protected Color originalColor;
     protected Animator myAnim;
     protected Rigidbody2D myRigidbody;
+    protected Bounds GroundLocation;
     private BoxCollider2D myFeet;
     abstract protected void attack(Collider2D Player);
     abstract protected void move(Collider2D Player);
@@ -31,7 +32,7 @@ public abstract class Enemy : MonoBehaviour
     }
     protected virtual void Update()
     {
-
+        LockPostion();
     }
 
     protected Collider2D IsPlayerview()
@@ -58,6 +59,30 @@ public abstract class Enemy : MonoBehaviour
         else if (direction == false)
         {
             transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
+    void LockPostion()
+    {
+        if (transform.position.x < GroundLocation.min.x)
+        {
+            Vector3 vector3 = new Vector3();
+            vector3.x = GroundLocation.min.x;
+            vector3.y = transform.position.y;
+            transform.position = vector3;
+        }
+        else if (transform.position.x > GroundLocation.max.x)
+        {
+            Vector3 vector3 = new Vector3();
+            vector3.x = GroundLocation.max.x;
+            vector3.y = transform.position.y;
+            transform.position = vector3;
+        }
+    }
+    protected void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.layer == 8)
+        {
+            GroundLocation = other.collider.bounds;
         }
     }
     protected void Die()

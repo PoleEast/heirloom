@@ -9,7 +9,6 @@ public class Enemy_Boss : Enemy
     public float SkillCDSpeed;
     public float AttackMoveSpeed;
     public GameObject SkillFlash;
-    private Bounds GroundLocation;
     private bool movedirection;
     private bool attackCD;
     private bool Skill1CD;
@@ -158,13 +157,6 @@ public class Enemy_Boss : Enemy
         myAnim.SetBool("move", true);
         myAnim.SetBool("idle", false);
 
-    }
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.layer == 8)
-        {
-            GroundLocation = other.collider.bounds;
-        }
     }
     void animationAttackoff()
     {

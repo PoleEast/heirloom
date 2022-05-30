@@ -20,49 +20,34 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2575706476737698309, guid: f9c3465c8659bd748b9aa320f15b8089,
-        type: 3}
-    - time: 0.083333336
-      value: {fileID: 1153186639303412204, guid: f9c3465c8659bd748b9aa320f15b8089,
-        type: 3}
-    - time: 0.16666667
       value: {fileID: -1612889882754415141, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
-    - time: 0.25
+    - time: 0.083333336
       value: {fileID: 8789256110201444776, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
-    - time: 0.33333334
+    - time: 0.16666667
       value: {fileID: 1557376687008963996, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
-    - time: 0.41666666
+    - time: 0.25
       value: {fileID: 3359498264996517356, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
-    - time: 0.5
+    - time: 0.33333334
       value: {fileID: -5895045103408436388, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
-    - time: 0.5833333
+    - time: 0.41666666
       value: {fileID: -1474304963897862659, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
-    - time: 0.6666667
+    - time: 0.5
       value: {fileID: 603654718184464619, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
-    - time: 0.75
+    - time: 0.5833333
       value: {fileID: -7059256116698406981, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
-    - time: 0.8333333
+    - time: 0.6666667
       value: {fileID: 4807754580797254604, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
-    - time: 0.9166667
+    - time: 0.75
       value: {fileID: -3014027980478171637, guid: f9c3465c8659bd748b9aa320f15b8089,
-        type: 3}
-    - time: 1
-      value: {fileID: -4962994384980385232, guid: f9c3465c8659bd748b9aa320f15b8089,
-        type: 3}
-    - time: 1.0833334
-      value: {fileID: -3600567090734850144, guid: f9c3465c8659bd748b9aa320f15b8089,
-        type: 3}
-    - time: 1.1666666
-      value: {fileID: 3404302707359058807, guid: f9c3465c8659bd748b9aa320f15b8089,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -83,8 +68,6 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2575706476737698309, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
-    - {fileID: 1153186639303412204, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
     - {fileID: -1612889882754415141, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
     - {fileID: 8789256110201444776, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
     - {fileID: 1557376687008963996, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
@@ -95,15 +78,12 @@ AnimationClip:
     - {fileID: -7059256116698406981, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
     - {fileID: 4807754580797254604, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
     - {fileID: -3014027980478171637, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
-    - {fileID: -4962994384980385232, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
-    - {fileID: -3600567090734850144, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
-    - {fileID: 3404302707359058807, guid: f9c3465c8659bd748b9aa320f15b8089, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.25
+    m_StopTime: 0.8333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -122,4 +102,25 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.5
+    functionName: attackMoveWork
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5833333
+    functionName: Attack_1HitBoxON
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.75
+    functionName: animationAttackoff
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
